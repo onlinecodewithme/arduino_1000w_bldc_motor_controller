@@ -68,7 +68,7 @@ def generate_launch_description():
     # Create the arduino_bridge node
     arduino_bridge_node = Node(
         package='arduino_motor_bridge',
-        executable='arduino_bridge_node.py',
+        executable='arduino_bridge_node',  # No .py extension
         name='arduino_bridge',
         output='screen',
         parameters=[{
